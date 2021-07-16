@@ -1,0 +1,480 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>website</title>
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+       
+        
+    </head>
+    <style>
+     
+     
+        *{
+            margin: 0;
+            padding: auto;
+        }
+        #nav-bar{
+            position: sticky;
+            top: 0;
+            z-index: 10;}
+        .navbar-nav{
+            margin-left: auto;
+        }
+        .navbar-nav li{
+            padding: 0 10px;
+
+        }
+        .navbar-nav li a{
+            float: right;
+            text-align: left;
+            scroll-behavior: smooth;
+        }
+        .navbar-light .navbar-nav  li.active>a{
+         color: white;
+       }
+        #nav-bar ul li a:hover{
+            color: orangered;
+        }
+        .navbar-light .navbar-brand{
+          color: rgb(235, 174, 9);
+          font-size: 20px;
+          text-transform: capitalize;
+          font-style: oblique;
+          letter-spacing: 3px;
+          padding:20px;
+          }
+        .navbar-toggler{
+            border: none;
+        }
+        .nav-link{
+            color:#fff;
+            font-weight:lighter;
+            font-size: 16px;
+        }
+        #slider{
+            width: 1280px;
+            height: 842px;
+        }
+        .carousel-caption{
+         
+         top: 270px;
+        }
+        .carousel-caption p{
+         font-size: 45px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         margin-top: 20px;
+         font-family: Arial, Helvetica, sans-serif;
+       }
+       .carousel-caption h5{
+         font-size: 25px;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         margin-top: 20px;
+         font-family: merienda;
+       } 
+       #a{
+         text-transform: uppercase;
+         background: rgb(235, 174, 9);
+         padding: 10px 30px;
+         display: inline-block;
+         color: white;
+         margin-top: 15px;
+         text-decoration: none;
+         border-radius: 5px;
+        }
+        #services{
+          background-color:rgb(59, 57, 52);
+          background-size: cover;
+          background-position: center;
+          color: black;
+          background-attachment: fixed;
+          padding-top: 50px;
+          padding-bottom: 50px;
+
+        }
+        #services h1{
+          text-align: center;
+          color:black;
+          padding-bottom: 10px;
+        }
+        #services h1::after{
+          content:"";
+          background:black;
+          display: block;
+          height: 3px;
+          width: 170px;
+          margin: 20px auto 5px;
+        }
+        .sevices{
+          margin-top: 40px;
+        }
+        .icon{
+          font-size: 40px;
+          margin: 20px auto;
+          padding: 20px;
+          height: 80px;
+          border: 1px solid #fff;
+          border-radius: 50%;
+        }
+        #about{
+          margin: 4em 0;
+          padding: 1em;
+          position: relative;
+        }
+        #about h1{
+          font-family:monospace;
+          text-align: center;
+          color:#f97300;
+          margin: 2em;
+
+        }
+        #about img{
+          height: 200px;
+          width: 200px;
+          border-radius: 50%;
+        }
+        #about span{
+          display: block;
+          color: #888;
+          position: absolute;
+          left: 115px;
+        }
+        #about .desc{
+          padding: 2em;
+          border-left: 4px solid #10828c;
+        }
+        #about .desc h3{
+        
+          color: #10828c;
+        }
+        #about .desc p{
+          line-height: 2;
+          color: #888 ;
+        }
+        #portfolio{
+          margin: 4em 0;
+          position: relative;
+
+        }
+        #portfolio h1{
+          color: #f97300;
+
+          margin: 2em;
+        }
+        #portfolio img{
+          height: 300px;
+          width: 300px;
+          margin: 1em;
+         
+        }
+        #portfolio h3{
+          color: rgb(241, 43, 43);
+          font-family: monospace;
+        }
+        #team{
+          margin: 75px 0;
+          
+        }
+        h1{
+          text-align: center;
+          font-weight: bold;
+          letter-spacing: 2px;
+          color: #f97300;
+          padding-bottom: 10px;
+          
+        }
+        h1:after{
+          content: "";
+          background: #f97300;
+          display: block;
+          height: 3px;
+          width: 150px;
+          margin: 10px auto;
+        }
+        .service{
+          margin-top: 25px;
+        }
+        .service .img-box{
+         opacity: 1; 
+         display: block;
+         position: relative; 
+         float: left;
+         resize: horizontal;
+        }
+        .service h2{
+          font-size: 27px;
+          font-weight: bold;
+          margin-top: 15px;
+
+        }.service h3{
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 15px;
+
+        }
+        input[type=text], textarea{
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          box-sizing: border-box;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+             }
+        input[type=submit]
+        {
+          background-color: #04aa6d;
+          color:#fff;
+          padding: 12px 12px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          background-image: url("Saved Pictures/map-image.png");
+        }
+        input[type=submit]:hover{
+          background-color: #45a049;
+        }
+        .container1{
+          border-radius: 5px;
+          background-color:#ccc;
+          padding: 20px;
+        }
+        #footer{
+          font-weight: bold;
+          
+        }
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+         
+        
+       
+    </style>
+    <body>
+        <!---navigationbar-->
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img src="saved pictures/boot.png"> Start Bootstrap </a>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto" >
+                      <li class="navbar-item active">
+                        <a class="nav-link" href="#">SERVICES</a>
+                      </li>
+                      <li class="navbar-item active">
+                        <a class="nav-link" href="#about">ABOUT US</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#portfolio">PORTFILO</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#team">OUR TEAM</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#contact">CONTACT US</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                   </nav>
+                  </section>
+                   <!----slider---->
+                   
+                       <div id="slider">
+                        <button class="carousel-control" type="button" data-bs-target="#carouselExampleIndicators">
+                            <span class="carousel-control" aria-hidden="true"></span>
+                            <span class="visually-hidden"></span>
+                        </button>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Saved Pictures/web.jpg" class="d-block img-fluid">
+                                <div class="carousel-caption">
+                                    <h5>Welcome To Our Studio!</h5>
+                                    <p>IT'S NICE TO MEET YOU</p>
+                                    <a id="a" href="#">TELL ME MORE!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------about------->
+                    <section id="about">
+                      <div class="container 1">
+                        <div class="row">
+                          <h1>ABOUT US</h1>
+                          </div>
+                          <div class="col-lg-4 col-md-4 col-sm-12">
+                            <img src="saved pictures/2.jpg" class="img-fluid">
+                            <span class="text-justify"></span>
+
+                          </div>
+                          <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                            <h3>lorem ipsum</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                          </div>
+                          
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                              <img src="saved pictures/3.jpg" class="img-fluid">
+                              <span class="text-justify"></span>
+  
+                            </div>
+                            <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                              <h3>lorem ipsum</h3>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                            </div>
+                            
+                              <div class="col-lg-4 col-md-4 col-sm-12">
+                                <img src="saved pictures/1.jpg" class="img-fluid">
+                                <span class="text-justify"></span>
+    
+                              </div>
+                              <div class="col-lg-8 col-md-8 col-sm-12 desc">
+                                <h3>lorem ipsum</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                              </div>
+                            
+                          
+                        
+                      </div>
+                    </section>
+                    <!-----portfoilo------->
+                    
+                    <div id="portfolio">
+                     <div class="container 1">
+                      <h1 class="text-center">PORTFILO</h1>
+                    <div  class="row">
+                      <div class="column">
+                        <div class="content">
+                          <img src="Saved Pictures/p1.jpg">
+                          <h3>Threads Illustration</h3>
+                        </div>
+                      </div>
+                      </div>
+                    </div>
+
+                    <div class="container 1">
+                    <div  class="row">
+                      <div class="column">
+                        <div class="content">
+                          <img src="Saved Pictures/p2.jpg">
+                          <h3>Explore Graphic Design</h3>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    <div class="container 1">
+                    <div  class="row">
+                      <div class="column">
+                        <div class="content">
+                          <img src="Saved Pictures/p3.jpg">
+                          <h3>Finish Identity</h3>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <!-------team section------>
+                    <section id="team">
+                      <div class="container 1">
+                        <h1>OUR TEAM</h1>
+                        <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 service text-center">
+                            <div class="img-box">
+                              <img src="saved pictures/t1.jpg" class="img-responsive">
+                              <h2>Parveen Anand</h2>
+                              <h3>Lead Designer</h3>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 service text-center">
+                            <div class="img-box">
+                              <img src="saved pictures/t2.jpg" class="img-responsive">
+                              <h2>Diana Petersen</h2>
+                              <h3>Lead Marketer</h3>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                        <div class="row">
+                          <div class="col-lg-3 col-md-3 col-sm-12 service text-center">
+                            <div class="img-box">
+                              <img src="saved pictures/t3.jpg" class="img-responsive">
+                              <h2>Larry Parker</h2>
+                              <h3>Lead Developer</h3>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                    <!-------contact--------->
+                    <h1>CONTACT US</h1>
+                    <section id="contact">
+                    <div class="container 1">
+                      <form action="contact">
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" name="first name" placeholder="first name">
+
+                        <label for="name">Last Name</label>
+                        <input type="text" id="name" name="last name" placeholder="last name">
+
+                        <label for="email">EMAIL-ID</label>
+                        <input type="text" id="name" name="email" placeholder="email-id">
+
+                        <label for="phone number">PHONE NUMBER</label>
+                        <input type="text" id="name" name="phone number" placeholder="phone number">
+                        
+                        <label for="message">MESSAGE</label> 
+                        <textarea id="message" name="message" placeholder="message">
+                        </textarea>
+
+                        <input type="submit" value="submit">
+                      </form>
+                    </div>
+                    </section>
+                    <!-------footer--------->
+                    <section id="footer">
+                      <div class="container text-center">
+                        <p>THANKS FOR VISITING THIS WEBSITE</p>
+                      </div>
+                    </section>
+                    
+ 
+
+                   
+
+
+       
+        
+                   
+                
+                  
+
+    
+</body>
+</html>
